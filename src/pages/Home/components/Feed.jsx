@@ -15,11 +15,34 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const posts = [
-    {id: 1, description: 'teste 01'},
-    {id: 2, description: 'teste 02'},
-    {id: 3, description: 'teste 03'},
-    {id: 4, description: 'teste 04'},
-    {id: 5, description: 'teste 05'},
+    {
+        id: 1,
+        author: {
+            id: 1,
+            name: 'Lucas Weirich',
+            username: 'lucasWeirich',
+            avatar: '/images/avatars/avatar_1.jpeg'
+        },
+        title: "Criando um App do zero utilizando React.js",
+        date: "April 20, 2022",
+        description: 'Fala pessoal! Qual o framework favorito de vocês?',
+        hashtags: "#dotnet, #javascript, #reactjs, #developer",
+        image: "/images/posts/post9.jpeg"
+    },
+    {
+        id: 2,
+        author: {
+            id: 1,
+            name: 'Lucas Weirich',
+            username: 'lucasWeirich',
+            avatar: '/images/avatars/avatar_1.jpeg'
+        },
+        title: "Comparativo entre React.js e Vue.js - Performance",
+        date: "April 20, 2022",
+        description: 'Fala pessoal! Qual o framework favorito de vocês?',
+        hashtags: "#dotnet, #javascript, #reactjs, #developer",
+        image: "/images/posts/post8.jpeg"
+    }
 ];
 
 function Feed() {
